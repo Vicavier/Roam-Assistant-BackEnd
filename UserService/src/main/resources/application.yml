@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.207.52.65:3306/my_blog?serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+
+server:
+  port: 9090
