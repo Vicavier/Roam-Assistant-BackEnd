@@ -3,8 +3,7 @@ server:
 
 open:
   ai:
-#    key: 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
-    key: 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
+    key: YOUR_KEY
     request:
       timeout: 3000
     model: gpt-3.5-turbo-0613
