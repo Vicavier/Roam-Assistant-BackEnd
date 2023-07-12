@@ -15,15 +15,15 @@ public class FrontController {
     @Resource
     private FrontService frontServiceImpl;
 
-    @PostMapping("/test")
-    public Result getGPTAnswer(String place){
-        String res = frontServiceImpl.getGPTAnswer(place);
+    @PostMapping("/simpleChat")
+    public Result getGPTAnswer(String start_place, String destination, String start_time){
+        String res = frontServiceImpl.getGPTAnswer(start_place);
         return Result.success().code(Code.CODE_200).data(res);
     }
 
     @GetMapping("/flask")
     public Result testFlask(){
         String str = frontServiceImpl.testFlask();
-        return Result.success().code(Code.CODE_200).data(str);
+        return Result.success().message("springboot和flask通讯成功!").code(Code.CODE_200).data(str);
     }
 }

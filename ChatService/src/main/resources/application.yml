@@ -3,7 +3,7 @@ server:
 
 open:
   ai:
-    key: YOUR_KEY
+    key: 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
     request:
       timeout: 3000
-    model: gpt-3.5-turbo-0613
+    model: text-davinci-003
